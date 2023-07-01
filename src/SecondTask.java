@@ -14,10 +14,9 @@ public class SecondTask {
         try (Scanner scanner = new Scanner(System.in)) {
             enteredName = scanner.nextLine();
         }
-        if (enteredName.equals(targetName)) {
-            System.out.println(helloName);
-        } else {
-            System.out.println(failText);
-        }
+
+        String resultMessage = enteredName.equals(targetName) ? helloName : failText;
+        System.out.println(resultMessage);
+
     }
 }
